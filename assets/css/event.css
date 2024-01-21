@@ -1,0 +1,115 @@
+.event-section {
+    /*padding-top: 110px;*/
+    padding-top: clamp(2.5rem, 6.25vw + 1.25rem, 6.875rem);
+    padding-bottom: 400px;
+}
+
+.event-section .wrapper .event {
+    display: flex;
+    gap: 20px;
+}
+
+.event-section .image {
+    /*flex-grow: 1;*/
+    /*flex-basis: 0;*/
+}
+.image p {
+    max-width: 30ch;
+}
+.event-text {
+    display: flex;
+    gap: 30px;
+    /*flex-grow: 1;*/
+    /*flex-basis: 0;*/
+    flex-direction: column;
+
+    margin-left: 40px;
+    max-width: 50ch;
+}
+
+.event-text h2 {
+    text-transform: uppercase;
+    text-align: left;
+}
+.event-section .wrapper{
+    position: relative;
+}
+.teaser {
+    display: flex;
+    /*gap: 60px;*/
+    gap: clamp(2.188rem, 2.232vw + 1.741rem, 3.75rem);
+    align-items: center;
+    justify-content: center;
+
+    /*border: 3px solid green;*/
+    position: absolute;
+    bottom: -230px;
+    left: 500px;
+}
+
+.teaser > img {
+    /*width: 398px;*/
+    width: clamp(17.5rem, 16.536vw + 15.393rem, 24.875rem);
+    background-color: var(--color-white);
+    padding: 37px 22px;
+}
+
+.teaser .text img {
+    /*width: 290px;*/
+    width: clamp(12.5rem, 8.036vw + 10.893rem, 18.125rem);
+}
+
+.teaser .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 1440px) {
+    .teaser {
+        /*margin-top: 60px;*/
+        margin-top: clamp(2.188rem, 2.232vw + 1.741rem, 3.75rem);
+        position: static;
+    }
+    .event-section {
+        /*padding-bottom: 110px;*/
+        padding-bottom: clamp(3.125rem, 5.357vw + 2.054rem, 6.875rem);
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .event-section .wrapper .event {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .event .image img {
+        width: 100%;
+    }
+
+    .event .event-text {
+        margin-left: 0;
+        max-width: 60ch;
+    }
+    .teaser {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .teaser {
+        flex-direction: column;
+    }
+    .teaser > img {
+        /*width: 398px;*/
+        width: 100%;
+    }
+
+    .event-section {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+}

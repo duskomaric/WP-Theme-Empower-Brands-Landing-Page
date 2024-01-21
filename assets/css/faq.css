@@ -1,0 +1,117 @@
+.faq-section {
+    /*padding-block: 90px;*/
+    padding-block: clamp(2.813rem, 4.018vw + 2.009rem, 5.625rem);
+    background-color: #252525;
+}
+
+.faq-section .border-dark-bg {
+    margin-block: 25px;
+    margin-inline: auto;
+    width: 95%;
+}
+
+.faq-section .tab {
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+.faq-section label {
+    color: var(--color-white);
+    /*font-size: 18px;*/
+    font-size: calc(clamp(1rem, 0.179vw + 0.964rem, 1.125rem));
+    font-weight: 600;
+}
+
+.faq-section p {
+    color: var(--color-white);
+    /*font-size: 18px;*/
+    font-size: calc(clamp(1rem, 0.179vw + 0.964rem, 1.125rem));
+    font-weight: 400;
+    max-width: 95%;
+}
+
+.faq-section .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.faq-section .tab-content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.faq-section .tab input:checked ~ .tab-content {
+    margin-top: 15px;
+    height: auto;
+}
+
+.faq-section .faq-section {
+    overflow: hidden;
+}
+
+.faq-section .tab__label,
+.faq-section .tab__close {
+    display: flex;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.faq-section .tab__label {
+    position: relative;
+    justify-content: space-between;
+    transition: filter 0.3s ease-out;
+}
+
+.faq-section .tab__label::after {
+    content: "\276F";
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.faq-section .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+}
+
+.faq-section .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+
+.faq-section .tab input:not(:checked)  {
+    animation: bounce .5s infinite;
+}
+
+.faq-section .tab__label:hover {
+    filter: brightness(80%);
+}
+
+
+@keyframes bounce {
+    25% {
+        transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+        transform: rotate(90deg) translate(-.25rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .faq-section .tab {
+        max-width: 94%;
+        margin: 0;
+    }
+
+    .faq-section .tab__label::after {
+        right: -20px;
+    }
+}

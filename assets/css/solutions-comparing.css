@@ -1,0 +1,121 @@
+.solutions-comparing-section {
+    /*padding-block: 120px;*/
+    padding-block: clamp(3.75rem, 5.357vw + 2.679rem, 7.5rem);
+    background-color: var(--color-white);
+}
+
+.solutions-comparing-section h2 {
+    margin-inline: auto;
+    max-width: 25ch;
+}
+
+.solutions-comparing {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.keys-titles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.key-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.key-title img {
+    max-width: 300px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+.key-title h3 {
+
+    max-width: 22ch;
+    align-self: center;
+    text-align: center;
+}
+
+.solution-comparing,
+.solution-comparing ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+
+    padding: 0;
+    max-width: 45ch;
+}
+.solution-comparing ul li {
+    display: flex;
+    align-items: center;
+}
+
+
+.solution-comparing li {
+    list-style: none;
+}
+
+.solution-comparing .check::before {
+    content: url("../../assets/img/check-blue.svg");
+    margin-left: 0;
+    /*margin-right: 35px;*/
+    margin-right: clamp(0.938rem, 1.786vw + 0.58rem, 2.188rem);
+    vertical-align: middle;
+}
+
+.solution-comparing .minus::before {
+    content: url("../../assets/img/minus.svg");
+    margin-left: 0;
+    /*margin-right: 35px;*/
+    margin-right: clamp(0.938rem, 1.786vw + 0.58rem, 2.188rem);
+    vertical-align: middle;
+}
+
+.solutions-comparing-section .border {
+    width: 100%;
+    /*margin-top: 40px;*/
+    margin-top: clamp(0.938rem, 2.232vw + 0.491rem, 2.5rem);
+    /*margin-bottom: 82px;*/
+    margin-bottom: clamp(1.875rem, 4.643vw + 0.946rem, 5.125rem);
+}
+
+.border.mobile {
+    margin: 0;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (min-width: 768px) {
+    .solutions-comparing-section .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .solutions-comparing-section .desktop {
+        display: none;
+    }
+
+    .solutions-comparing {
+        flex-direction: column;
+        align-items: center;
+    }
+    .solutions-comparing-section h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .key-title img {
+        width: 50%;
+    }
+}

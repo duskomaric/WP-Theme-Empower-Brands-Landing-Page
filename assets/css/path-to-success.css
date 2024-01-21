@@ -1,0 +1,61 @@
+.path-to-success-section {
+    /*padding-bottom: 120px;*/
+    padding-bottom: clamp(2.5rem, 7.143vw + 1.071rem, 7.5rem);
+}
+
+.path-to-success-section .wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.path-to-success-section img {
+    width: calc(clamp(18.75rem, 30vw + 5rem, 37.5rem));
+}
+
+.path-to-success-section h2 {
+    text-align: left;
+}
+
+.path-to-success-section h2 {
+    margin-bottom: 30px;
+}
+
+.path-to-success-section ul {
+    padding: 0;
+}
+
+.path-to-success-section .text > p {
+    margin-bottom: 36px;
+}
+
+.key-aspect {
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.key-aspect::before {
+    content: url("../../assets/img/check.svg");
+    /*margin-left: 42px;*/
+    margin-left: clamp(0rem, 3.75vw - 0.75rem, 2.625rem);
+    /*margin-right: 30px;*/
+    margin-right: clamp(0.625rem, 1.786vw + 0.268rem, 1.875rem);
+    vertical-align: middle;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .path-to-success-section .wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+}

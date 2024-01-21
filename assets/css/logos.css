@@ -1,0 +1,38 @@
+/* LOGOS */
+.logos-section {
+    background-color: var(--color-white);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+
+
+    /*padding-top: 65px;*/
+    padding-top: clamp(2.5rem, 2.232vw + 2.054rem, 4.063rem);
+    /*padding-bottom: 65px;*/
+    padding-bottom: clamp(2.5rem, 2.232vw + 2.054rem, 4.063rem);
+}
+
+@media (max-width: 1440px) {
+    .logos {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+    .logos {
+        flex-direction: column;
+    }
+}

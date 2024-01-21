@@ -1,0 +1,137 @@
+/* HERO */
+.hero-section {
+    padding-bottom: clamp(1.25rem, 4.464vw + 0.357rem, 4.375rem);
+}
+
+.hero {
+    /*padding-top: 130px;*/
+    padding-top: clamp(5.625rem, 3.571vw + 4.911rem, 8.125rem);
+}
+
+.hero .title {
+    max-width: 25ch;
+    margin-bottom: 20px;
+}
+
+.hero .text {
+    color: var(--color-white);
+    /*font-size: 18px;*/
+    font-size: calc(clamp(1rem, 0.179vw + 0.964rem, 1.125rem));
+    font-weight: 400;
+    line-height: normal;
+
+    max-width: 54ch;
+    margin-bottom: 37px;
+}
+
+.hero .form-video {
+    display: flex;
+    /*gap: 65px;*/
+    gap: clamp(1.25rem, 4.018vw + 0.446rem, 4.063rem);
+}
+
+.hero .form {
+    background: var(--light-blue-mist);
+    box-shadow: 0 16px 24px 0 rgba(74, 82, 105, 0.25);
+    width: 50%;
+
+    /*padding: 59px 52px;*/
+    padding: clamp(1.875rem, 2.589vw + 1.357rem, 3.688rem) clamp(1.625rem, 2.321vw + 1.161rem, 3.25rem);
+}
+
+.hero form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero .form input {
+    border: none;
+    /*padding: 16px 27px;*/
+    padding: clamp(0.875rem, 0.179vw + 0.839rem, 1rem) clamp(1.25rem, 0.625vw + 1.125rem, 1.688rem);
+    background: var(--color-white);
+    box-shadow: 0 4px 16px 0 rgba(74, 82, 105, 0.25);
+}
+
+.hero .form input::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    /*font-size: 18px;*/
+    font-size: calc(clamp(1rem, 0.179vw + 0.964rem, 1.125rem));
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-submit {
+    position: relative;
+}
+
+.wpcf7-submit {
+    position: relative;
+    width: 100%;
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-video .video {
+    align-self: center;
+}
+
+.video iframe {
+    /*width: 555px;*/
+    width: clamp(24.313rem, 39.904vw - 1.226rem, 34.688rem);
+}
+
+/*.wpcf7-spinner {*/
+/*    background-color: #DEB82F;*/
+/*    visibility: visible;*/
+/*}*/
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (max-width: 1024px) {
+    .video iframe {
+        width: 100%;
+    }
+    .form-video {
+        flex-direction: column;
+    }
+
+    .form-video .video {
+        align-self: auto;
+    }
+
+    .hero .form {
+        width: 100%;
+    }
+    .hero form {
+        flex-direction: row;
+    }
+    form input {
+        width: calc(25% - 15px);
+    }
+}
+
+@media (max-width: 890px) {
+    .hero form {
+        flex-direction: column;
+    }
+    form input {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 640px) {
+}

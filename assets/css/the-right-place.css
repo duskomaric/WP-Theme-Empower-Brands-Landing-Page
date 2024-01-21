@@ -1,0 +1,29 @@
+.the-right-place {
+    /*padding-block: 150px;*/
+    padding-block: clamp(3.125rem, 8.929vw + 1.339rem, 9.375rem);
+}
+
+.the-right-place h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.are-you {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.are-you img {
+    width: 36px;
+    height: 36px;
+}
+
+.question {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.question p {
+    max-width: 35ch;
+}

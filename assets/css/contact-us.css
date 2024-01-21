@@ -1,0 +1,25 @@
+.contact-us-section .wrapper {
+    /*padding-inline: 205px;*/
+    padding-inline: clamp(0rem, 18.304vw - 3.661rem, 12.813rem);
+    background-color: var(--light-blue-mist);
+    /*padding-bottom: 90px;*/
+    padding-bottom: clamp(1.875rem, 5.357vw + 0.804rem, 5.625rem);
+}
+
+.contact-us-section .contact {
+    /*padding: 75px 122px;*/
+    padding: clamp(2.5rem, 3.125vw + 1.875rem, 4.688rem) clamp(0.625rem, 10vw - 1.375rem, 7.625rem);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    margin-inline: auto;
+
+}
+
+.contact-us-section p {
+    color: var(--color-white);
+
+    text-align: center;
+}
